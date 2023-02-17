@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Movies Detail</title>
 </head>
 
 <body>
-    <h4>Movies</h4>
+    <h4>{{movie.title}}</h4>
+    <h4>{{movie.year}}</h4>
+    <a href="/movies/delete/{{movie.id}}">Delete</a>
     <ul>
-        {% for movie in movies %}
-        <li ><a href="{{movie.id}}">{{movie.title}} </a> </li>
-        {% endfor %}
-
+        
+        
     </ul>
-    <a href="/movies/add">Add a movie</a>
 </body>
 
 </html>
